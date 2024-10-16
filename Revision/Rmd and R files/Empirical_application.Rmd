@@ -1061,6 +1061,6 @@ plt / fitted_sample_plot
 We can see that the posterior draws are largely contained the credible interval.
 
 ```{r}
-#save.image(file = here("Data/Empirical_example.RData"))
+save.image(file = here("Data/Empirical_example.RData"))
 ```
 
