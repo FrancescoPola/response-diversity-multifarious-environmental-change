@@ -1,5 +1,0 @@
-"0",""
-"0","p3 <- pd_E1 |>"
-"0","  draw() +"
-"0","  labs(x = ""Temperature °C"", y = ""Partial derivative with respect to T \n on Ankistrodesmus growth rate"","
-"0","       caption = cap_E1, title = """")"

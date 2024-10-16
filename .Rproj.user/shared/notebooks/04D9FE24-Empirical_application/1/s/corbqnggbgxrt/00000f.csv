@@ -1,3 +1,0 @@
-"0","p6 <- pd_E2 |>"
-"0","  draw() +"
-"0","  labs(x = ""Phosphate concentration (μmol L−1)"", y = ""Partial derivative with respect to Phosphate concentration (μmol L−1)\n on Ankistrodesmus growth rate"",caption = cap_E2, title = """")"
