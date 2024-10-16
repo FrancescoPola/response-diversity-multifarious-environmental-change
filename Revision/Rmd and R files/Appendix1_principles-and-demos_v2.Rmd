@@ -749,17 +749,17 @@ fig3 <- fig3 +
 ### One point
 
 We start showing how directional derivatives can be calculated even when
-the trajectory of the environmental change is unknown. This may be the
+the trajectory of the environmental change is undefined This may be the
 case when we want to calculate response diversity for future scenarios,
-and the future trajectory of environmental change is thus not known. Or
+and the future trajectory of environmental change is thus not defined. Or
 we may have data for a species or a community at only one environmental
 location (E1 = x, E2 = y). It is therefore important to be able to
 measure directional derivatives when the trajectory of the environmental
-change is unknown, as this can provide useful information on response
+change is undefined, as this can provide useful information on response
 diversity nonetheless, for instance, by taking the mean of the slopes
 calculates in all directions.
 Measuring response diversity when the trajectory of environmental change
-is unknown may represent a way to systematically measuring response
+is undefined may represent a way to systematically measuring response
 diversity to all possible environmental changes. This represents, in
 our view, an absolute measure of overall response diversity, since it
 captures the complete insurance capacity of a system under all possible
@@ -889,7 +889,7 @@ diversity.
 
 To explore this hypothesis, we calculate now response diversity for two
 communities (one with additive effect, and one including an interactive
-environmental effect) composed of 4 spp in 4 different cases: 1. Unknown
+environmental effect) composed of 4 spp in 4 different cases: 1. Undefined
 trajectory of the environmental change 2. Trajectory of env change is
 given by the time series,and E1 and E2 change over time independently 3.
 Trajectory of env change is given by the time series,and E1 and E2 change
@@ -1175,7 +1175,7 @@ ggarrange(sp1, sp2, sp3, sp4, ncol=4, nrow=1, common.legend = TRUE, legend="righ
 ggarrange(sp5, sp6, sp7, sp8,  ncol=4, nrow=1, common.legend = TRUE, legend="right")
 ```
 
-## Unknown trajectory of the environmental change
+## undefined trajectory of the environmental change
 
 ```{r, echo=FALSE, results='hide'}
 # community 1 
@@ -1500,7 +1500,7 @@ knitr::kable(head(rdiv_sim_nocor), col.names = gsub("[.]", " ", names(rdiv_sim_n
 
 Plot response diversity over time
 
-```{r RDindependentplot, fig.cap='Directional derivatives and response diversity with known trajectory of env change. E1 and E2 change independently over time. a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=6, fig.width=12}
+```{r RDindependentplot, fig.cap='Directional derivatives and response diversity with defined trajectory of env change. E1 and E2 change independently over time. a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=6, fig.width=12}
 # community 1 
 rmax<-max(rdiv_sim_nocor$rdiv,rdiv_sim_nocor2$rdiv); rmin<-1
   dmax<-max(rdiv_sim_nocor$sign,rdiv_sim_nocor2$sign); dmin<-0
@@ -1766,7 +1766,7 @@ knitr::kable(head(rdiv_sim_neg), col.names = gsub("[.]", " ", names(rdiv_sim_neg
 
 Plot response diversity over time for the two communities
 
-```{r RDnegativeplot, fig.cap='Directional derivatives and response diversity with known trajectory of env change. E1 and E2 change with negative correlation over time. a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=6, fig.width=12}
+```{r RDnegativeplot, fig.cap='Directional derivatives and response diversity with defined trajectory of env change. E1 and E2 change with negative correlation over time. a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=6, fig.width=12}
 
 # community 1 
 rmax<-max(rdiv_sim_neg$rdiv,rdiv_sim_neg2$rdiv); rmin<-1
@@ -2035,7 +2035,7 @@ knitr::kable(head(rdiv_sim_pos), col.names = gsub("[.]", " ", names(rdiv_sim_pos
 
 Plot response diversity over time
 
-```{r RDpositiveplot, fig.cap=' Directional derivatives and response diversity with known trajectory of env change for community 1 and 2. E1 and E2 change with negative correlation over time.a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=12, fig.width=12}
+```{r RDpositiveplot, fig.cap=' Directional derivatives and response diversity with defined trajectory of env change for community 1 and 2. E1 and E2 change with negative correlation over time.a and b: Species directional derivatives over time. c and d: Response diversity measured as similarity-based diversity metric. e and : Response diversity measured as divergence (sign sensitive). ', fig.align="center", fig.height=12, fig.width=12}
 
 rmax<-max(rdiv_sim_pos$rdiv,rdiv_sim_pos2$rdiv); rmin<-1
   dmax<-max(rdiv_sim_pos$sign,rdiv_sim_pos2$sign); dmin<-0

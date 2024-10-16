@@ -2957,7 +2957,7 @@ Absolute_RD_3$community <- as.factor(Absolute_RD_3$community)
 ```
 
 
-## Potential response diveristy across scenarios - here we create the data set to campare the Response Capacity in the three different scenarios we created above. That is, we compare potential dissimilarity and divergence in communities changing only in z1, in communities changing in z1 and z2 with positive correlation, and communities changing in z1 and z2 with negative correlation. 
+## Response capacity across scenarios - here we create the data set to campare the Response Capacity in the three different scenarios we created above. That is, we compare response capacity measured as dissimilarity and divergence in communities changing only in z1, in communities changing in z1 and z2 with positive correlation, and communities changing in z1 and z2 with negative correlation. 
 ```{r }
 # preparing data for overview plotting
 Absolute_RD_1$scenario <- 1
@@ -7436,7 +7436,7 @@ save.image(file = here("Data/my_work_space.RData"))
 
 
 ### Response capacity
-```{r potentialresponsediversity2, fig.cap='Potential response diversity', fig.align="center", fig.height=6, fig.width=8}
+```{r potentialresponsediversity2, fig.cap='response capacity', fig.align="center", fig.height=6, fig.width=8}
 col2 <- ifelse(Absolute_RD$scenario==1, "None",
                ifelse(Absolute_RD$scenario==2, "Positive",
                       ifelse(Absolute_RD$scenario==3, "Negative",
