@@ -1,0 +1,7 @@
+"0",""
+"0",""
+"0","# Get gams glance"
+"0","nested_gams %>% "
+"0","  mutate(results = map(gams, glance), "
+"0","         R.square = map_dbl(gams, ~ summary(.)$r.sq))  %>% "
+"0","  unnest(results) "

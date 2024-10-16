@@ -1,0 +1,7 @@
+"0",""
+"0",""
+"0","# Creating the dataset with the 2 columns as described above"
+"0","predicted <- nested_gams %>% unnest(predicted)"
+"0","rates <- cbind(new_data, predicted[,c(1,4)])"
+"0","rates <- rates %>%"
+"0","  relocate(SpeciesName, E1, E2, predicted)"

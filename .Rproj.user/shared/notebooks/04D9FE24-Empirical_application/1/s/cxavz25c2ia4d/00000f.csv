@@ -1,0 +1,1 @@
+"0","knitr::kable(head(pd_spp), col.names = gsub(""[.]"", "" "", names(pd_spp)))"

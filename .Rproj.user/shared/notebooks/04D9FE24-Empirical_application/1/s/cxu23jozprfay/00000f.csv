@@ -1,0 +1,8 @@
+"0","cap_E1 <- expression(Phosphate_concentration == 15)"
+"0","p2 <- sm_E1|>"
+"0","  ggplot(aes(x = E1, y = est)) +"
+"0","  geom_ribbon(aes(ymin = lower_ci, ymax = upper_ci), alpha = 0.2) +"
+"0","  geom_line() +"
+"0","  labs(x = ""Temperature °C"", y = ""Partial effect of T"","
+"0","       caption = cap_E1, title = """")"
+"0","p2"

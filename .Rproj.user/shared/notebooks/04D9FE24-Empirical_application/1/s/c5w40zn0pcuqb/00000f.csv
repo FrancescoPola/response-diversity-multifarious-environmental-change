@@ -1,0 +1,3 @@
+"0","# Create a time series with E1 and E2 changing randomly over time"
+"0","(refs <- tibble(sample(new_data$E1, 50), sample(new_data$E2, 50)) %>% "
+"0","   dplyr::rename(E1 = ""sample(new_data$E1, 50)"", E2 = ""sample(new_data$E2, 50)""))"

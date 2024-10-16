@@ -1,0 +1,7 @@
+"0","p1 <-  draw(m_Ankistrodesmus, rug = FALSE, dist = 0.5) &"
+"0","  geom_hline(yintercept = E2_p, size =1) &"
+"0","  geom_vline(xintercept = E1_p, size = 1) &"
+"0","  labs(title = """", caption = '')"
+"0",""
+"0","p_partials <- wrap_plots(p1, p2, p3, p5, p6)"
+"0","p_partials"

@@ -1,0 +1,7 @@
+"0","m_list <- (nested_gams$gams)"
+"0","my_sp_names <- (nested_gams$SpeciesName)"
+"0","time <-  as.data.frame(seq.int(nrow(refs)))"
+"0",""
+"0","(pd_list <- modify_depth(m_list, 1, ~ get_partials(., refs)))"
+"1","[[1]]
+"

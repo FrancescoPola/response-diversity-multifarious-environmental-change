@@ -1,0 +1,7 @@
+"0","# reduce the dataframe and keep only what we need"
+"0",""
+"0","red_spp <- dd_spp %>%  dplyr::select(sp, time, E1_ref, E2_ref, dir_deriv) "
+"0",""
+"0","# from long to wide"
+"0","(rdiv_sim <- red_spp %>% "
+"0","  spread( sp, dir_deriv))"
